@@ -92,6 +92,11 @@ body {
 .header-top {
   height: 91px;
 }
+@media (max-width: 768px) {
+  .header-top {
+    height: 84px;
+  }
+}
 .header-fixed {
   position: fixed;
   z-index: 3;
@@ -385,6 +390,11 @@ body {
     padding: 60px 10px;
   }
 }
+@media (max-width: 450px) {
+  .page-header .header-bottom {
+    padding: 30px 14px;
+  }
+}
 .page-header .header-bottom h1 {
   font-weight: 700;
   font-size: 58px;
@@ -411,13 +421,11 @@ body {
   .page-header .header-bottom picture {
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
   }
   .page-header .header-bottom picture img {
     border-radius: 30px;
   }
-}
-.page-header .header-fixed {
-  background: var(--bg-secondary);
 }
 .page-header .header-fixed.header-fixed__bg {
   background: var(--bg-secondary);
