@@ -300,6 +300,16 @@ body {
     width: 100%;
   }
 }
+.hero-video iframe {
+  width: 508px;
+  height: 363px;
+}
+@media (max-width: 550px) {
+  .hero-video iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
 .hero-video .video-casino {
   position: absolute;
   top: 0;
@@ -329,6 +339,7 @@ body {
 }
 .hero .video-control {
   position: absolute;
+  opacity: 1;
   z-index: 3;
   top: 50%;
   left: 50%;
@@ -339,6 +350,10 @@ body {
   outline: none;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+.hero .video-control.hide {
+  opacity: 0;
+  z-index: -1;
 }
 .hero .sub-title {
   display: block;
