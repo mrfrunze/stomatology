@@ -19,19 +19,18 @@ window.addEventListener("scroll", function () {
 })
 
 if (document.body.contains(document.querySelector(".video-control"))) {
-    console.log(false)
     const butoom = document.querySelector(".video-control");
     const videoPlay = document.getElementById("video");
     const video = document.querySelector('.hero-video');
 
-    function playClip(media) {
-        media.play();
-    }
+    // function playClip(media) {
+    //     media.play();
+    // }
 
     butoom.addEventListener("click", function () {
         video.classList.add("hide");
-        butoom.style.opacity = "0";
-        playClip(videoPlay)
+        butoom.classList.add("hide");
+        // playClip(videoPlay)
 
     });
 }
